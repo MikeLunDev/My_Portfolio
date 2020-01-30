@@ -1,5 +1,5 @@
 import React from "react";
-
+import myAvatar from "../assets/avatar.svg";
 const Contact = () => {
   return (
     <div className="container">
@@ -8,7 +8,7 @@ const Contact = () => {
           <h2 className="font-anton">Michele Lunati</h2>
 
           <img
-            src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortWaved&accessoriesType=Blank&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=Hoodie&clotheColor=Red&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+            src={myAvatar}
             alt="my avatar"
             className="avatar-img"
             style={{ height: "20rem", margin: "5rem auto" }}

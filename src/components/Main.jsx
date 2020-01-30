@@ -1,15 +1,12 @@
 import React from "react";
+import myAvatar from "../assets/avatar.svg";
 
 const Main = () => {
   return (
     <div className="container">
       <div className="row">
         <div className="col">
-          <img
-            className="avatar-img"
-            src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortWaved&accessoriesType=Blank&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=Hoodie&clotheColor=Red&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
-            alt="my avatar"
-          />
+          <img className="avatar-img" src={myAvatar} alt="my avatar" />
           <div className="banner-text">
             <h1>Software Developer</h1>
             <hr />

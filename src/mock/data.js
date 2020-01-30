@@ -22,6 +22,7 @@ export const data = {
     [
       "https://skillvalue.com/jobs/wp-content/uploads/sites/7/2019/12/back-end-developer-freelancing-project-remote-available.png",
       ["Node/Express", "REST API", "MongoDB"],
+      "",
       "https://github.com/MikeLunDev/Challengr-BackEnd"
     ]
   ]

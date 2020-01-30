@@ -40,24 +40,28 @@ const Project = ({ imgURL, projectSkills, liveDemoLink, githubLink }) => {
             ))}
         </ul>
         <div className="card-body">
-          <a
-            href={liveDemoLink}
-            className="card-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-chrome" />
-            LiveDemo
-          </a>
-          <a
-            href={githubLink}
-            className="card-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-github" />
-            Github Repo
-          </a>
+          {liveDemoLink.length > 10 && (
+            <a
+              href={liveDemoLink}
+              className="card-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-chrome" />
+              LiveDemo
+            </a>
+          )}
+          {githubLink.length > 10 && (
+            <a
+              href={githubLink}
+              className="card-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github" />
+              Github Repo
+            </a>
+          )}
         </div>
       </div>
     </div>
