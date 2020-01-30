@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Main = () => {
   return (
@@ -7,27 +7,28 @@ const Main = () => {
         <div className="col">
           <img
             className="avatar-img"
-            src="https://avatars1.githubusercontent.com/u/35794495?s=460&v=4"
+            src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortWaved&accessoriesType=Blank&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=Hoodie&clotheColor=Red&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
             alt="my avatar"
           />
           <div className="banner-text">
-            <h1>Frontend Web Developer</h1>
+            <h1>Software Developer</h1>
             <hr />
             <p>
-              HTML5 | CSS3 | JavaScript | React | Node.js | TypeScript
+              HTML5 | CSS3 | Bootstrap4| JavaScript ES6+ | React | Node.js |
+              MongoDB
             </p>
           </div>
           <div className="social-links">
             <a
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/yadong-rong-816b4314b/"
+              href="https://www.linkedin.com/in/michele-lunati-dev/"
               target="_blank"
             >
               <i className="fab fa-linkedin" />
             </a>
             <a
               rel="noopener noreferrer"
-              href="https://github.com/rongyadong"
+              href="https://github.com/MikeLunDev"
               target="_blank"
             >
               <i className="fab fa-github" />
@@ -36,7 +37,7 @@ const Main = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

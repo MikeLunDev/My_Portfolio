@@ -1,48 +1,54 @@
-import React, { Component } from 'react'
-import Skill from './Skill'
-import Education from './Education'
+import React, { Component } from "react";
+import Skill from "./Skill";
+import Education from "./Education";
 
 class About extends Component {
   state = {
     skills: [
-      ['HTML5', 'fab fa-html5 fa-2x'],
-      ['CSS3', 'fab fa-css3 fa-2x'],
-      ['JavaScript', 'fab fa-js fa-2x'],
-      ['React', 'fab fa-react fa-2x'],
-      ['Node.js', 'fab fa-node fa-2x']
+      ["HTML5", "fab fa-html5 fa-2x"],
+      ["CSS3", "fab fa-css3 fa-2x"],
+      ["JavaScript", "fab fa-js fa-2x"],
+      ["React", "fab fa-react fa-2x"],
+      ["Node.js", "fab fa-node fa-2x"],
+      ["MongoDB", "fas fa-database fa-2x"]
     ],
     educations: [
       [
-        '8-month contract frontend developer in EMS Brüel & Kjær',
-        'Frontend Web Developer - EMS Brüel & Kjær',
-        '(06/2019 - 01/2020)'
+        "I'm now on the other side teaching other students",
+        "Tutor at strive school",
+        "(12/2019 - Present)"
       ],
       [
-        '3-month part time developer in St James Terrace Aged Care',
-        'Web Developer - St James Terrace Aged Care',
-        '(01/2019 - 04/2019)'
+        "Full stack course",
+        "6-month strive school bootcamp",
+        "(06/2019 - 12/2019)"
       ],
       [
-        'IT Professional Year Program',
-        'Performance Education - Melbourne Campus',
-        '(04/2016 - 11/2016)'
+        "Chemical engeneering / computer science",
+        "Dropout",
+        "(09/2016 - 06/2019)"
       ]
     ]
-  }
+  };
   render() {
     return (
-      <div className="container">
+      <div className="container mb-5">
         <div className="row">
           <div className="col-12 col-lg-6">
             <h2 className="font-anton">My skill set</h2>
             <ul className="list-group">
               {this.state.skills.map((skill, index) => (
-                <Skill key={index} skillName={skill[0]} skillIcon={skill[1]} />
+                <Skill
+                  key={index}
+                  skillName={skill[0]}
+                  notaprop={22}
+                  skillIcon={skill[1]}
+                />
               ))}
             </ul>
           </div>
           <div className="col-12 col-lg-6">
-            <h2 className="font-anton">My Working Experience</h2>
+            <h2 className="font-anton">{"Education & Working"}</h2>
             <ul className="list-group">
               {this.state.educations.map((education, index) => (
                 <Education
@@ -56,8 +62,8 @@ class About extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default About
+export default About;

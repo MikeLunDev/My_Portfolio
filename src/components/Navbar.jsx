@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,10 +7,9 @@ const Navbar = () => {
       <Link
         className="navbar-brand"
         to="/"
-        style={{ fontWeight: 'bold', color: '#fff', fontSize: '2rem' }}
+        style={{ fontWeight: "bold", color: "#fff", fontSize: "2rem" }}
       >
-        <i className="fas fa-code" />
-        Yadong Rong
+        <i className="fas fa-code" /> Michele Lunati
       </Link>
       <button
         className="navbar-toggler"
@@ -31,28 +30,28 @@ const Navbar = () => {
           <Link
             className="btn btn-outline-dark"
             to="/about"
-            style={{ margin: 'auto 7px', fontSize: '1.5rem' }}
+            style={{ margin: "auto 7px", fontSize: "1.5rem" }}
           >
             About
           </Link>
           <Link
             className="btn btn-outline-dark"
             to="/projects"
-            style={{ margin: 'auto 7px', fontSize: '1.5rem' }}
+            style={{ margin: "auto 7px", fontSize: "1.5rem" }}
           >
             Projects
           </Link>
           <Link
             className="btn btn-outline-dark"
             to="/contact"
-            style={{ margin: 'auto 7px', fontSize: '1.5rem' }}
+            style={{ margin: "auto 7px", fontSize: "1.5rem" }}
           >
             Contact
           </Link>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
